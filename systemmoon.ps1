@@ -14,8 +14,24 @@ Start-Service -Name "LanmanServer"
 
 Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -value 0
 
-#comandos para baixar security.evtx e sysmon.evtx
+# Comandos para baixar Security.evtx e Sysmon.evtx
 
+# Defina a URL do download do Security.evtx
+$SecurityLogsDownloadURL = "https://github.com/jovair1994/SytemMoon/raw/main/Security.evtx"
 
+# Defina o caminho de destino onde o arquivo será baixado
+$DownloadPath = "C:\Users\Administrator\Desktop\Security.evtx"
+
+# Baixe o arquivo usando o URL
+Invoke-WebRequest -Uri $SecurityLogsDownloadURL -OutFile $DownloadPath
+
+# Defina a URL do download do Sysmon.evtx
+$SysmonLogsDownloadURL = "https://github.com/jovair1994/SytemMoon/raw/main/Sysmon.evtx"
+
+# Defina o caminho de destino onde o arquivo será baixado
+$DownloadPath = "C:\Users\Administrator\Desktop\Sysmon.evtx"
+
+# Baixe o arquivo usando o URL
+Invoke-WebRequest -Uri $SysmonLogsDownloadURL -OutFile $DownloadPath
 
 Restart-Computer
